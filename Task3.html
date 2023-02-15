@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PALAK PANDEY TASK3</title>
+  <!-- Meta tags, Bootstrap CSS and JavaScript files, and other necessary files go here -->
+
+  <style>
+    /* Custom styles */
+    .navbar-custom {
+      background-color: #333;
+      color: #fff;
+    }
+
+    .card-custom {
+      margin-bottom: 20px;
+    }
+
+    .card-custom img {
+      width: 100%;
+      height: auto;
+      cursor: pointer;
+    }
+
+    /* Modal styles */
+    .modal-body img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* Contact form styles */
+    .form-group label {
+      font-weight: bold;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      border-radius: 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation bar, jumbotron, cards, modals, and contact form go here -->
+
+  <script>
+    $(document).ready(function() {
+      // Handle image clicks to show modals
+      $('.card-custom img').click(function() {
+        var modalId = $(this).data('target');
+        $(modalId).modal('show');
+      });
+
+      // Handle form submission
+      $('#contact-form').submit(function(event) {
+        event.preventDefault();
+        var name = $('#inputName').val();
+        var email = $('#inputEmail').val();
+        var message = $('#inputMessage').val();
+        console.log('Name:', name);
+        console.log('Email:', email);
+        console.log('Message:', message);
+        alert('Form submitted successfully!');
+        $(this).trigger('reset');
+      });
+    });
+  </script>
+</body>
+</html>
+
+    <title>University Of Idaho</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+      <a class="navbar-brand" href="#">Logo</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+        </ul>
+      </div>  
+    </nav>
+
+    <!-- Jumbotron with clickable icons -->
+    <div class="jumbotron">
+      <h1>University Of Idaho</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+      <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+      <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+    </div>
+
+    <!-- Images with modals -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="Images/53a75874-1201-4d98-90d9-16433427259e_1140x641.jpg" alt="Image 1" class="img-fluid img-thumbnail" data-toggle="modal" data-target="#myModal1">
+        </div>
+        <div class="col-md-4">
+          <img src="Images/FY21_403002576_MH07_0021-1024x576.jpg" alt="Image 2" class="img-fluid img-thumbnail" data-toggle="modal" data-target="#myModal2">
+        </div>
+        <div class="col-md-4">
+          <img src="Images/LOGO-UIdaho-2020.jpg" alt="Image 3" class="img-fluid img-thumbnail" data-toggle="modal" data-target="#myModal3">
+        </div>
+      </div>
+    </div>
+
+    <!-- Modals -->
+    <div class="
+    <!-- Modals -->
+    <div class="modal fade" id="myModal1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Image 1</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <img src="Images/53a75874-1201-4d98-90d9-16433427259e_1140x641.jpg" class="img-fluid">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal fade" id="myModal2">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Image 2</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <img src="Images/FY21_403002576_MH07_0021-1024x576.jpg" class="img-fluid">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form id="contact-form" method="post">
+        <div class="form-group">
+          <label for="inputName">Name:</label>
+          <input type="text" class="form-control" id="inputName" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="inputEmail">Email:</label>
+          <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="inputMessage">Message:</label>
+          <textarea class="form-control" id="inputMessage" rows="5" placeholder="Enter your message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    
+    <div class="modal fade" id="myModal3">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Image 3</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <img src="Images/LOGO-UIdaho-2020.jpg" class="img-fluid">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    

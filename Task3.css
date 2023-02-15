@@ -1,0 +1,32 @@
+/* Custom styles */
+.navbar-custom {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .card-custom {
+    margin-bottom: 20px;
+  }
+  
+  .card-custom img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+  
+  /* Modal styles */
+  .modal-body img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Contact form styles */
+  .form-group label {
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    border-radius: 0;
+  }
+  
